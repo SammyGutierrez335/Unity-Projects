@@ -37,3 +37,14 @@ Steps to creating a Unity VR Project
         Scripts will be nested in Assets/Scripts
             Inside script you create a references
             Back in Unity you will see references in Objects and you can assign previously created InputActionReference
+6 - Grabbing 
+    Select your object and add the 'XR Grab Interactable' and 'Capsule Collider' component to it.
+    Add 'Interactable' layer so that your object can distinguish items that should be able to be grabbed.
+    Give your hands Interaction Layer Mask a the 'interactable' layer.
+
+    To set where you grab the object you need to create/nest a empty object underneath and apply it to the same layer and position it where you would like.
+    Make sure to go to the actual object -> XR Grab Interatable -> Attach Transform and drag the 'AttachTransform' you created into that object.
+
+    To allow the object to rotate you must add the degree of rotation to the transforms x-axis.
+
+    If you want to make something grabbable only when actually near you, remove XR Ray Interactor, Line Renderer, XR Interactor Line Visual components. Replace these with XR Direct Interactor
