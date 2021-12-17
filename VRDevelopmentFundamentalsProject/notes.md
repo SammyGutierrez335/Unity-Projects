@@ -15,3 +15,25 @@ Steps to creating a Unity VR Project
     You can add filters to these controllers under 'Edit > Project Settings > Preset Manager
     You will also need to delete and re add the XR Rig to update the references.
     In the XR Rig Inspector, update the Input Action Manager (script) Action Assets Size to 1 and Element 0 to XRI Default Input Actions (InputActionsAsset)
+
+4 - Configuring/Building for Oculus Quest
+    Configuring https://developer.oculus.com/documentation/unity/unity-conf-settings/
+    Go to File > Build Settings and switch Platform to Android (for Oculus Quest and Quest 2).
+    
+    Installing APK
+    developer.oculus.com/documentation/native/android/mobile-device-setup/
+
+    install SDK Platform-Tools (Android Debug Bridge --installing apk's/Hard way)
+    developer.android.com/studio/releases/platform-tools
+
+    install SDK with Side Quest (easier way)
+5 - Installing and Animating Hands
+    Animator - The interface to control animation system. 
+        Entry - Where animation starts
+        Blend Trees allow us to use multiple animations at the same time (running and leaning in a direction) 
+    Getting input from controller:
+            Asset Menu > Samples > XR Interaction Toolkit > 1.0.0-pre.8 > Default Input Actions (This is where you bind actions with inputs from several devices to use in your game )    
+    Create and Attach Script
+        Scripts will be nested in Assets/Scripts
+            Inside script you create a references
+            Back in Unity you will see references in Objects and you can assign previously created InputActionReference
