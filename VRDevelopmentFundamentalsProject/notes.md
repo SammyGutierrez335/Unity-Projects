@@ -48,3 +48,7 @@ Steps to creating a Unity VR Project
     To allow the object to rotate you must add the degree of rotation to the transforms x-axis.
 
     If you want to make something grabbable only when actually near you, remove XR Ray Interactor, Line Renderer, XR Interactor Line Visual components. Replace these with XR Direct Interactor
+
+7 - Grabbing (part 2)
+    Movement Types
+    
