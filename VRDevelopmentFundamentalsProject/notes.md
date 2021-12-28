@@ -51,4 +51,8 @@ Steps to creating a Unity VR Project
 
 7 - Grabbing (part 2)
     Movement Types
-    
+    Kinematic - matches attach point of hand and attach transofrm of the grabbed object as hand is moved it updates the rigid bodies position. It appears to always be a consistant frame behind.
+    Velocity Tracking - tracks controller movement and applies phsyics based velocity to object.
+    Instantaneous
+
+    When adding gravity/colliders, you have to ensure the floor has a box or mesh collider to prevent things from falling through the ground.
